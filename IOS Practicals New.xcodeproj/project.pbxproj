@@ -31,6 +31,17 @@
 		64E4B8D227992944000CE5F2 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64E4B8D32799297D000CE5F2 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64E4B8D4279929BA000CE5F2 /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64AF906C27A46179003DF221 /* Structure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Structure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64AF906D27A46847003DF221 /* Classes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Classes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64AF906E27A46955003DF221 /* Properties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Properties.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64AF906F27A46A65003DF221 /* Subscript.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscript.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64AF907027A46AB5003DF221 /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Methods.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64C99E9327A692DF001B04E7 /* Error Handling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Error Handling.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64C99E9427A6D87F001B04E7 /* Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64DC2AE827A05FD400B7DFBF /* Collections.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collections.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64DC2AE927A0608B00B7DFBF /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64DC2AEA27A0611D00B7DFBF /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64DC2AEB27A0663100B7DFBF /* Enums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,10 +55,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6474D3C7279FD1B600EF4869 /* Advance Swift */ = {
+			isa = PBXGroup;
+			children = (
+				64DC2AE827A05FD400B7DFBF /* Collections.playground */,
+				64DC2AE927A0608B00B7DFBF /* Functions.playground */,
+				64DC2AEA27A0611D00B7DFBF /* Closures.playground */,
+				64DC2AEB27A0663100B7DFBF /* Enums.playground */,
+				64AF906C27A46179003DF221 /* Structure.playground */,
+				64AF906D27A46847003DF221 /* Classes.playground */,
+				64AF906E27A46955003DF221 /* Properties.playground */,
+				64AF906F27A46A65003DF221 /* Subscript.playground */,
+				64AF907027A46AB5003DF221 /* Methods.playground */,
+				64C99E9327A692DF001B04E7 /* Error Handling.playground */,
+				64C99E9427A6D87F001B04E7 /* Extensions.playground */,
+			);
+			path = "Advance Swift";
+			sourceTree = "<group>";
+		};
 		64AD805B27983999004663F6 = {
 			isa = PBXGroup;
 			children = (
 				64E4B8CD2799247A000CE5F2 /* Swift Playground */,
+				6474D3C7279FD1B600EF4869 /* Advance Swift */,
 				64AD806627983999004663F6 /* IOS Practicals New */,
 				64AD806527983999004663F6 /* Products */,
 			);
