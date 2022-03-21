@@ -17,6 +17,18 @@
 		647DC4D127CE78CA006439F9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DC4D027CE78CA006439F9 /* PageViewController.swift */; };
 		647DC4D327CE7936006439F9 /* UICompSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DC4D227CE7936006439F9 /* UICompSignUpViewController.swift */; };
 		647DC4D527CE7955006439F9 /* UICompLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DC4D427CE7955006439F9 /* UICompLogInViewController.swift */; };
+		6483151627DB46F500452D8D /* UINavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6483151527DB46F500452D8D /* UINavigation.storyboard */; };
+		6483151927DB47B400452D8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483151827DB47B400452D8D /* FirstViewController.swift */; };
+		6483151B27DB482400452D8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483151A27DB482400452D8D /* SecondViewController.swift */; };
+		6483151D27DB488300452D8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483151C27DB488300452D8D /* ThirdViewController.swift */; };
+		6483151F27DB48D500452D8D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483151E27DB48D500452D8D /* FourthViewController.swift */; };
+		6483152227DB4A8300452D8D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152127DB4A8300452D8D /* Coordinator.swift */; };
+		6483152427DB4AB100452D8D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152327DB4AB100452D8D /* MainCoordinator.swift */; };
+		6483152627DB4BD300452D8D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152527DB4BD300452D8D /* AppCoordinator.swift */; };
+		6483152927DB531C00452D8D /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152827DB531C00452D8D /* FirstCoordinator.swift */; };
+		6483152B27DB533400452D8D /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152A27DB533400452D8D /* SecondCoordinator.swift */; };
+		6483152D27DB535C00452D8D /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152C27DB535C00452D8D /* ThirdCoordinator.swift */; };
+		6483152F27DB539700452D8D /* FourthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152E27DB539700452D8D /* FourthCoordinator.swift */; };
 		6491E87E27D0B1D0008F84B3 /* MapUICompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491E87D27D0B1D0008F84B3 /* MapUICompViewController.swift */; };
 		649504B827CF536800A6BF9C /* TableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649504B727CF536800A6BF9C /* TableContentViewController.swift */; };
 		649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649504B927CF660100A6BF9C /* IndexTableViewCell.swift */; };
@@ -31,6 +43,7 @@
 		64BD205327C8DA5E00DD28E1 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BD205227C8DA5E00DD28E1 /* Authentication.storyboard */; };
 		64C3B2BA27D0E04200D2C7E9 /* WebViewUICompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3B2B927D0E04200D2C7E9 /* WebViewUICompViewController.swift */; };
 		64C3B2BC27D135DD00D2C7E9 /* ScrollablesSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3B2BB27D135DD00D2C7E9 /* ScrollablesSegmentViewController.swift */; };
+		64C3C23627DEF832000A8CF3 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3C23527DEF832000A8CF3 /* FifthViewController.swift */; };
 		64F5319C27D6262B002A43F8 /* ios 15 - Google Search.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 64F5319B27D6262B002A43F8 /* ios 15 - Google Search.pdf */; };
 		64F5319F27D64239002A43F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5319E27D64239002A43F8 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +59,18 @@
 		647DC4D027CE78CA006439F9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		647DC4D227CE7936006439F9 /* UICompSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICompSignUpViewController.swift; sourceTree = "<group>"; };
 		647DC4D427CE7955006439F9 /* UICompLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICompLogInViewController.swift; sourceTree = "<group>"; };
+		6483151527DB46F500452D8D /* UINavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigation.storyboard; sourceTree = "<group>"; };
+		6483151827DB47B400452D8D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6483151A27DB482400452D8D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6483151C27DB488300452D8D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		6483151E27DB48D500452D8D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		6483152127DB4A8300452D8D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6483152327DB4AB100452D8D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6483152527DB4BD300452D8D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6483152827DB531C00452D8D /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		6483152A27DB533400452D8D /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		6483152C27DB535C00452D8D /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		6483152E27DB539700452D8D /* FourthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCoordinator.swift; sourceTree = "<group>"; };
 		6491E87D27D0B1D0008F84B3 /* MapUICompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUICompViewController.swift; sourceTree = "<group>"; };
 		649504B727CF536800A6BF9C /* TableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContentViewController.swift; sourceTree = "<group>"; };
 		649504B927CF660100A6BF9C /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +92,7 @@
 		64BD205227C8DA5E00DD28E1 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		64C3B2B927D0E04200D2C7E9 /* WebViewUICompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUICompViewController.swift; sourceTree = "<group>"; };
 		64C3B2BB27D135DD00D2C7E9 /* ScrollablesSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollablesSegmentViewController.swift; sourceTree = "<group>"; };
+		64C3C23527DEF832000A8CF3 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		64C99E9327A692DF001B04E7 /* Error Handling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Error Handling.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64C99E9427A6D87F001B04E7 /* Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extensions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64DC2AE827A05FD400B7DFBF /* Collections.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collections.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -122,6 +148,40 @@
 			path = "Advance Swift";
 			sourceTree = "<group>";
 		};
+		6483151727DB472400452D8D /* UINavigation */ = {
+			isa = PBXGroup;
+			children = (
+				6483151827DB47B400452D8D /* FirstViewController.swift */,
+				6483151A27DB482400452D8D /* SecondViewController.swift */,
+				6483151C27DB488300452D8D /* ThirdViewController.swift */,
+				6483151E27DB48D500452D8D /* FourthViewController.swift */,
+				64C3C23527DEF832000A8CF3 /* FifthViewController.swift */,
+			);
+			path = UINavigation;
+			sourceTree = "<group>";
+		};
+		6483152027DB49EC00452D8D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6483152727DB52FC00452D8D /* UINavigation */,
+				6483152127DB4A8300452D8D /* Coordinator.swift */,
+				6483152327DB4AB100452D8D /* MainCoordinator.swift */,
+				6483152527DB4BD300452D8D /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6483152727DB52FC00452D8D /* UINavigation */ = {
+			isa = PBXGroup;
+			children = (
+				6483152827DB531C00452D8D /* FirstCoordinator.swift */,
+				6483152A27DB533400452D8D /* SecondCoordinator.swift */,
+				6483152C27DB535C00452D8D /* ThirdCoordinator.swift */,
+				6483152E27DB539700452D8D /* FourthCoordinator.swift */,
+			);
+			path = UINavigation;
+			sourceTree = "<group>";
+		};
 		649504BD27CF662100A6BF9C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +213,7 @@
 		64AD806627983999004663F6 /* IOS Practicals New */ = {
 			isa = PBXGroup;
 			children = (
+				6483152027DB49EC00452D8D /* Coordinators */,
 				643CEBEA27D87B52009C975B /* Extensions */,
 				64F5319D27D64216002A43F8 /* Constants */,
 				649504BD27CF662100A6BF9C /* Cells */,
@@ -173,6 +234,7 @@
 		64BD205027C8D9C600DD28E1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6483151727DB472400452D8D /* UINavigation */,
 				646C740827CCC40500EAF351 /* SignUpViewController.swift */,
 				646C740A27CCC84800EAF351 /* LogInViewController.swift */,
 				647DC4D027CE78CA006439F9 /* PageViewController.swift */,
@@ -193,6 +255,7 @@
 			children = (
 				64BD205227C8DA5E00DD28E1 /* Authentication.storyboard */,
 				647DC4CE27CE7749006439F9 /* UIComponents.storyboard */,
+				6483151527DB46F500452D8D /* UINavigation.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -281,6 +344,7 @@
 				647DC4CF27CE7749006439F9 /* UIComponents.storyboard in Resources */,
 				649504BC27CF660100A6BF9C /* IndexTableViewCell.xib in Resources */,
 				64F5319C27D6262B002A43F8 /* ios 15 - Google Search.pdf in Resources */,
+				6483151627DB46F500452D8D /* UINavigation.storyboard in Resources */,
 				64AD80742798399B004663F6 /* LaunchScreen.storyboard in Resources */,
 				64AD80712798399B004663F6 /* Assets.xcassets in Resources */,
 				64AD806F27983999004663F6 /* Main.storyboard in Resources */,
@@ -296,21 +360,33 @@
 			files = (
 				6443788D27D1F4E500F9505B /* ItemCollectionViewCell.swift in Sources */,
 				64F5319F27D64239002A43F8 /* Constants.swift in Sources */,
+				6483152627DB4BD300452D8D /* AppCoordinator.swift in Sources */,
 				643CEBEC27D87B74009C975B /* UIViewControllerExtension.swift in Sources */,
+				6483152F27DB539700452D8D /* FourthCoordinator.swift in Sources */,
 				649504BF27CF827600A6BF9C /* CollectionViewController.swift in Sources */,
 				64C3B2BA27D0E04200D2C7E9 /* WebViewUICompViewController.swift in Sources */,
+				6483152D27DB535C00452D8D /* ThirdCoordinator.swift in Sources */,
 				647DC4D327CE7936006439F9 /* UICompSignUpViewController.swift in Sources */,
 				64AD806C27983999004663F6 /* ViewController.swift in Sources */,
 				64AD806827983999004663F6 /* AppDelegate.swift in Sources */,
+				6483152227DB4A8300452D8D /* Coordinator.swift in Sources */,
+				6483151F27DB48D500452D8D /* FourthViewController.swift in Sources */,
+				6483151D27DB488300452D8D /* ThirdViewController.swift in Sources */,
 				646C740927CCC40500EAF351 /* SignUpViewController.swift in Sources */,
+				6483152927DB531C00452D8D /* FirstCoordinator.swift in Sources */,
 				647DC4D127CE78CA006439F9 /* PageViewController.swift in Sources */,
+				6483152427DB4AB100452D8D /* MainCoordinator.swift in Sources */,
 				6443788F27D220F500F9505B /* StackViewViewController.swift in Sources */,
 				6491E87E27D0B1D0008F84B3 /* MapUICompViewController.swift in Sources */,
+				6483152B27DB533400452D8D /* SecondCoordinator.swift in Sources */,
+				64C3C23627DEF832000A8CF3 /* FifthViewController.swift in Sources */,
 				649504B827CF536800A6BF9C /* TableContentViewController.swift in Sources */,
 				643CEBEE27D89924009C975B /* UITextViewExtension.swift in Sources */,
 				649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */,
+				6483151927DB47B400452D8D /* FirstViewController.swift in Sources */,
 				646C740B27CCC84800EAF351 /* LogInViewController.swift in Sources */,
 				64AD806A27983999004663F6 /* SceneDelegate.swift in Sources */,
+				6483151B27DB482400452D8D /* SecondViewController.swift in Sources */,
 				647DC4D527CE7955006439F9 /* UICompLogInViewController.swift in Sources */,
 				64C3B2BC27D135DD00D2C7E9 /* ScrollablesSegmentViewController.swift in Sources */,
 			);
