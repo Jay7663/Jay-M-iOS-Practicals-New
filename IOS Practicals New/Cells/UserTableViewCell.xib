@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="IOS_Practicals_New" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-WH-CDL">
+                        <rect key="frame" x="20" y="10" width="113" height="120"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-qg-gfo">
+                        <rect key="frame" x="175" y="30" width="226" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="email@0f.user" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m1-V6-aGl">
+                        <rect key="frame" x="175" y="76" width="226" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MW3-qg-gfo" firstAttribute="leading" secondItem="ou7-WH-CDL" secondAttribute="trailing" constant="42" id="9Ql-zf-dtf"/>
+                    <constraint firstItem="0m1-V6-aGl" firstAttribute="leading" secondItem="ou7-WH-CDL" secondAttribute="trailing" constant="42" id="jb6-6q-a25"/>
+                    <constraint firstItem="ou7-WH-CDL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oUT-h7-tBZ"/>
+                    <constraint firstAttribute="bottom" secondItem="ou7-WH-CDL" secondAttribute="bottom" constant="10" id="tBD-jt-gXD"/>
+                    <constraint firstItem="0m1-V6-aGl" firstAttribute="top" secondItem="MW3-qg-gfo" secondAttribute="bottom" constant="22" id="xSe-bG-324"/>
+                    <constraint firstItem="ou7-WH-CDL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="y09-rQ-zpx"/>
+                    <constraint firstItem="MW3-qg-gfo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="yEd-eT-BbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivProfilePic" destination="ou7-WH-CDL" id="F8l-nn-CD4"/>
+                <outlet property="lblEmail" destination="0m1-V6-aGl" id="b24-u9-hoI"/>
+                <outlet property="lblUserName" destination="MW3-qg-gfo" id="NDP-rt-c32"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
