@@ -4,6 +4,10 @@ import Foundation
 /// Storyboards
 enum Storyboard: String {
     case webServices = "WebServices"
+    case architecture = "Architecture"
+    case mvcStoryBoard = "MVCStoryboard"
+    case mvpLogIn = "MVPLogIn"
+    case mvvmStoryboard = "MVVMStoryboard"
 }
 
 /// Storyboarded

@@ -61,20 +61,33 @@
                                     <segue destination="zyP-TZ-PT1" kind="presentation" modalPresentationStyle="fullScreen" id="vIM-DM-W2Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-Gc-0oH">
+                                <rect key="frame" x="30" y="328" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Architecture">
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ACm-Ac-GY7" kind="presentation" modalPresentationStyle="fullScreen" id="wFv-YN-GPF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N63-Oh-oju" secondAttribute="trailing" constant="30" id="3Qx-bk-hOQ"/>
+                            <constraint firstItem="tZc-Gc-0oH" firstAttribute="trailing" secondItem="u8q-a7-dCg" secondAttribute="trailing" id="3Uw-nv-xCb"/>
                             <constraint firstItem="6UR-Oz-Nsg" firstAttribute="trailing" secondItem="N63-Oh-oju" secondAttribute="trailing" id="Ish-OZ-uiZ"/>
                             <constraint firstItem="N63-Oh-oju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KIm-X3-nT8"/>
                             <constraint firstItem="u8q-a7-dCg" firstAttribute="leading" secondItem="K9K-T1-kbh" secondAttribute="leading" id="OI2-6L-SPM"/>
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="trailing" secondItem="6UR-Oz-Nsg" secondAttribute="trailing" id="UZF-2A-Ome"/>
+                            <constraint firstItem="tZc-Gc-0oH" firstAttribute="leading" secondItem="u8q-a7-dCg" secondAttribute="leading" id="V31-9R-m0y"/>
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="top" secondItem="6UR-Oz-Nsg" secondAttribute="bottom" constant="30" id="WDg-eM-ZVf"/>
                             <constraint firstItem="6UR-Oz-Nsg" firstAttribute="top" secondItem="N63-Oh-oju" secondAttribute="bottom" constant="30" id="WJC-FE-3Ni"/>
                             <constraint firstItem="u8q-a7-dCg" firstAttribute="trailing" secondItem="K9K-T1-kbh" secondAttribute="trailing" id="WSe-8a-Kuz"/>
                             <constraint firstItem="u8q-a7-dCg" firstAttribute="top" secondItem="K9K-T1-kbh" secondAttribute="bottom" constant="30" id="gIS-EC-mfi"/>
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="leading" secondItem="6UR-Oz-Nsg" secondAttribute="leading" id="gRd-LT-KXK"/>
+                            <constraint firstItem="tZc-Gc-0oH" firstAttribute="top" secondItem="u8q-a7-dCg" secondAttribute="bottom" constant="30" id="uru-38-ts2"/>
                             <constraint firstItem="N63-Oh-oju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vRj-CS-rJE"/>
                             <constraint firstItem="6UR-Oz-Nsg" firstAttribute="leading" secondItem="N63-Oh-oju" secondAttribute="leading" id="yEx-h0-n9j"/>
                         </constraints>
@@ -117,6 +130,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFV-rt-RMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="763" y="227"/>
+        </scene>
+        <!--Architecture-->
+        <scene sceneID="tFU-pj-zei">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Architecture" id="ACm-Ac-GY7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVJ-Is-Ly8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="292"/>
         </scene>
     </scenes>
     <resources>

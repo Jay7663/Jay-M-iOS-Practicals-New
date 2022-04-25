@@ -67,26 +67,32 @@ class UsersTableViewController: UIViewController, Storyboarded {
         self.title = "Alamofire"
         btnAddUser.isHidden = false
         if let url = URL(string: "https://reqres.in/api/users?delay=3") {
-            NetworkingClient.networkCall(url: url, method: .get, params: nil, encoding: JSONEncoding.default, headers: nil, viewController: self) { result in
-                do {
-                    let decoder = JSONDecoder()
-                    let userResponse = try decoder.decode(RootUserData.self, from: result)
-                    
-                    for user in userResponse.data {
-                        print(user)
-                        self.arrayUsers.append(UserData(id: user.id, email: user.email, first_name: user.first_name, last_name: user.last_name, avatar: user.avatar))
-                    }
-                    
-                    DispatchQueue.main.async {
+            NetworkingClient.networkCall(url: url, method: .get, params: nil, encoding: JSONEncoding.default, headers: nil) { result in
+                if let result = result {
+                    do {
+                        let decoder = JSONDecoder()
+                        let userResponse = try decoder.decode(RootUserData.self, from: result)
+                        
+                        for user in userResponse.data {
+                            print(user)
+                            self.arrayUsers.append(UserData(id: user.id, email: user.email, first_name: user.first_name, last_name: user.last_name, avatar: user.avatar))
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.activityIndicator.stopAnimating()
+                            self.activityIndicator.isHidden = true
+                            self.usersTableView.reloadData()
+                        }
+                        
+                    } catch let error {
                         self.activityIndicator.stopAnimating()
                         self.activityIndicator.isHidden = true
-                        self.usersTableView.reloadData()
+                        print("Error: \(error.localizedDescription)")
                     }
-                    
-                } catch let error {
-                    self.activityIndicator.stopAnimating()
-                    self.activityIndicator.isHidden = true
-                    print("Error: \(error.localizedDescription)")
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "Something went wrong Please try aging", preferredStyle: .actionSheet)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         }

@@ -64,9 +64,15 @@ class WsLogInViewController: UIViewController, Storyboarded {
     fileprivate func authenticateUserAlamofire(_ user: UserLogIn) {
         if let url = URL(string: "https://reqres.in/api/login") {
             let params = ["email" : user.email, "password": user.password]
-            NetworkingClient.networkCall(url: url, method: .post, params: params, encoding: JSONEncoding.default, headers: nil, viewController: self){ data in
+            NetworkingClient.networkCall(url: url, method: .post, params: params, encoding: JSONEncoding.default, headers: nil) { data in
                 print("Ok")
-                self.coordinator?.goToTableViewOfUsers(false)
+                if data == nil {
+                    let alert = UIAlertController(title: "Error", message: "Something went wrong Please try aging", preferredStyle: .actionSheet)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    self.coordinator?.goToTableViewOfUsers(false)
+                }
             }
         }
     }

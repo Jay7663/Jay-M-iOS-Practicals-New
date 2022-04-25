@@ -13,7 +13,19 @@
 		643CEBEE27D89924009C975B /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643CEBED27D89924009C975B /* UITextViewExtension.swift */; };
 		6443788D27D1F4E500F9505B /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443788C27D1F4E500F9505B /* ItemCollectionViewCell.swift */; };
 		6443788F27D220F500F9505B /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443788E27D220F500F9505B /* StackViewViewController.swift */; };
+		644E48362805B7F30040D8F1 /* MVCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644E48352805B7F30040D8F1 /* MVCStoryboard.storyboard */; };
+		644E48382805B8380040D8F1 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E48372805B8380040D8F1 /* MVCViewController.swift */; };
+		644E483A2805BA180040D8F1 /* LogInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E48392805BA180040D8F1 /* LogInPresenter.swift */; };
+		644E483C2805BA360040D8F1 /* MVPLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E483B2805BA360040D8F1 /* MVPLogInViewController.swift */; };
+		644E483E2805BAE00040D8F1 /* MVPLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644E483D2805BAE00040D8F1 /* MVPLogIn.storyboard */; };
 		6451AC6527F4288A000C537B /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6451AC6427F4288A000C537B /* Storyboard.swift */; };
+		6458F62A280689290055AA89 /* Architecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458F629280689290055AA89 /* Architecture.storyboard */; };
+		6458F62D280689E50055AA89 /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F62C280689E50055AA89 /* ArchitectureViewController.swift */; };
+		6458F63028068B6A0055AA89 /* ArchitectureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F62F28068B6A0055AA89 /* ArchitectureCoordinator.swift */; };
+		6458F63628069D170055AA89 /* MVVMStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458F63528069D170055AA89 /* MVVMStoryboard.storyboard */; };
+		6458F6382806D2FB0055AA89 /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F6372806D2FB0055AA89 /* Names.swift */; };
+		6458F63A2806D3D50055AA89 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F6392806D3D50055AA89 /* NamesViewController.swift */; };
+		6458F63C2806D4320055AA89 /* NamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F63B2806D4320055AA89 /* NamesViewModel.swift */; };
 		646C740927CCC40500EAF351 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C740827CCC40500EAF351 /* SignUpViewController.swift */; };
 		646C740B27CCC84800EAF351 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C740A27CCC84800EAF351 /* LogInViewController.swift */; };
 		647DC4CF27CE7749006439F9 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DC4CE27CE7749006439F9 /* UIComponents.storyboard */; };
@@ -58,6 +70,7 @@
 		64D07DBD27EDB23300E0498F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D07DBC27EDB23300E0498F /* UserData.swift */; };
 		64D07DC027EDBFC000E0498F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D07DBE27EDBFC000E0498F /* UserTableViewCell.swift */; };
 		64D07DC127EDBFC000E0498F /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64D07DBF27EDBFC000E0498F /* UserTableViewCell.xib */; };
+		64F467712807E0050028C78D /* MVVMLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F467702807E0050028C78D /* MVVMLogInViewController.swift */; };
 		64F5319C27D6262B002A43F8 /* ios 15 - Google Search.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 64F5319B27D6262B002A43F8 /* ios 15 - Google Search.pdf */; };
 		64F5319F27D64239002A43F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5319E27D64239002A43F8 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +81,19 @@
 		643CEBED27D89924009C975B /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		6443788C27D1F4E500F9505B /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		6443788E27D220F500F9505B /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
+		644E48352805B7F30040D8F1 /* MVCStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCStoryboard.storyboard; sourceTree = "<group>"; };
+		644E48372805B8380040D8F1 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		644E48392805BA180040D8F1 /* LogInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenter.swift; sourceTree = "<group>"; };
+		644E483B2805BA360040D8F1 /* MVPLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPLogInViewController.swift; sourceTree = "<group>"; };
+		644E483D2805BAE00040D8F1 /* MVPLogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPLogIn.storyboard; sourceTree = "<group>"; };
 		6451AC6427F4288A000C537B /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		6458F629280689290055AA89 /* Architecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Architecture.storyboard; sourceTree = "<group>"; };
+		6458F62C280689E50055AA89 /* ArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
+		6458F62F28068B6A0055AA89 /* ArchitectureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureCoordinator.swift; sourceTree = "<group>"; };
+		6458F63528069D170055AA89 /* MVVMStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMStoryboard.storyboard; sourceTree = "<group>"; };
+		6458F6372806D2FB0055AA89 /* Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
+		6458F6392806D3D50055AA89 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
+		6458F63B2806D4320055AA89 /* NamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewModel.swift; sourceTree = "<group>"; };
 		646C740827CCC40500EAF351 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		646C740A27CCC84800EAF351 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		647DC4CE27CE7749006439F9 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
@@ -133,6 +158,7 @@
 		64E4B8D227992944000CE5F2 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arrays.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64E4B8D32799297D000CE5F2 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64E4B8D4279929BA000CE5F2 /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64F467702807E0050028C78D /* MVVMLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLogInViewController.swift; sourceTree = "<group>"; };
 		64F5319B27D6262B002A43F8 /* ios 15 - Google Search.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "ios 15 - Google Search.pdf"; path = "../../../../Downloads/ios 15 - Google Search.pdf"; sourceTree = "<group>"; };
 		64F5319E27D64239002A43F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		957DA52AFE91488DF190D6E0 /* Pods-IOS Practicals New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Practicals New.release.xcconfig"; path = "Target Support Files/Pods-IOS Practicals New/Pods-IOS Practicals New.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +195,125 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		644E482D2805B73F0040D8F1 /* MVC Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				644E48312805B77E0040D8F1 /* Controller */,
+				644E48302805B7750040D8F1 /* View */,
+				644E482F2805B76C0040D8F1 /* Model */,
+			);
+			path = "MVC Architecture";
+			sourceTree = "<group>";
+		};
+		644E482E2805B74D0040D8F1 /* MVP Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				644E48342805B7A00040D8F1 /* Presenter */,
+				644E48332805B7970040D8F1 /* View */,
+				644E48322805B78A0040D8F1 /* Model */,
+			);
+			path = "MVP Architecture";
+			sourceTree = "<group>";
+		};
+		644E482F2805B76C0040D8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		644E48302805B7750040D8F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				644E48352805B7F30040D8F1 /* MVCStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		644E48312805B77E0040D8F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				644E48372805B8380040D8F1 /* MVCViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		644E48322805B78A0040D8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		644E48332805B7970040D8F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				644E483B2805BA360040D8F1 /* MVPLogInViewController.swift */,
+				644E483D2805BAE00040D8F1 /* MVPLogIn.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		644E48342805B7A00040D8F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				644E48392805BA180040D8F1 /* LogInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6458F62B2806895A0055AA89 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				6458F62C280689E50055AA89 /* ArchitectureViewController.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		6458F62E28068B480055AA89 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				6458F62F28068B6A0055AA89 /* ArchitectureCoordinator.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		6458F63128069C210055AA89 /* MVVM Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				6458F63428069CB10055AA89 /* ViewModel */,
+				6458F63328069CA60055AA89 /* View */,
+				6458F63228069C460055AA89 /* Model */,
+			);
+			path = "MVVM Architecture";
+			sourceTree = "<group>";
+		};
+		6458F63228069C460055AA89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6458F6372806D2FB0055AA89 /* Names.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6458F63328069CA60055AA89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6458F63528069D170055AA89 /* MVVMStoryboard.storyboard */,
+				6458F6392806D3D50055AA89 /* NamesViewController.swift */,
+				64F467702807E0050028C78D /* MVVMLogInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6458F63428069CB10055AA89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6458F63B2806D4320055AA89 /* NamesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6474D3C7279FD1B600EF4869 /* Advance Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +347,7 @@
 		6483152027DB49EC00452D8D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				6458F62E28068B480055AA89 /* Architecture */,
 				6483152727DB52FC00452D8D /* UINavigation */,
 				6483152127DB4A8300452D8D /* Coordinator.swift */,
 				6483152327DB4AB100452D8D /* MainCoordinator.swift */,
@@ -265,6 +411,9 @@
 		64AD806627983999004663F6 /* IOS Practicals New */ = {
 			isa = PBXGroup;
 			children = (
+				6458F63128069C210055AA89 /* MVVM Architecture */,
+				644E482E2805B74D0040D8F1 /* MVP Architecture */,
+				644E482D2805B73F0040D8F1 /* MVC Architecture */,
 				64A5E37A27F1AAFF00FAB6F8 /* Utils */,
 				64CF5DE127ED791E00CB891D /* Models */,
 				6483152027DB49EC00452D8D /* Coordinators */,
@@ -288,6 +437,7 @@
 		64BD205027C8D9C600DD28E1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6458F62B2806895A0055AA89 /* Architecture */,
 				64CF5DE427ED7FD000CB891D /* WebServices */,
 				6483151727DB472400452D8D /* UINavigation */,
 				646C740827CCC40500EAF351 /* SignUpViewController.swift */,
@@ -312,6 +462,7 @@
 				647DC4CE27CE7749006439F9 /* UIComponents.storyboard */,
 				6483151527DB46F500452D8D /* UINavigation.storyboard */,
 				64CF5DDF27ED75BD00CB891D /* WebServices.storyboard */,
+				6458F629280689290055AA89 /* Architecture.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -435,9 +586,13 @@
 				649504BC27CF660100A6BF9C /* IndexTableViewCell.xib in Resources */,
 				64D07DC127EDBFC000E0498F /* UserTableViewCell.xib in Resources */,
 				64F5319C27D6262B002A43F8 /* ios 15 - Google Search.pdf in Resources */,
+				644E48362805B7F30040D8F1 /* MVCStoryboard.storyboard in Resources */,
 				6483151627DB46F500452D8D /* UINavigation.storyboard in Resources */,
+				6458F62A280689290055AA89 /* Architecture.storyboard in Resources */,
 				64AD80742798399B004663F6 /* LaunchScreen.storyboard in Resources */,
 				64AD80712798399B004663F6 /* Assets.xcassets in Resources */,
+				6458F63628069D170055AA89 /* MVVMStoryboard.storyboard in Resources */,
+				644E483E2805BAE00040D8F1 /* MVPLogIn.storyboard in Resources */,
 				64AD806F27983999004663F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,11 +646,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6458F63028068B6A0055AA89 /* ArchitectureCoordinator.swift in Sources */,
 				6443788D27D1F4E500F9505B /* ItemCollectionViewCell.swift in Sources */,
 				64F5319F27D64239002A43F8 /* Constants.swift in Sources */,
 				64A5E37C27F1AB2A00FAB6F8 /* NetworkingClient.swift in Sources */,
 				64CF5DE327ED794000CB891D /* UserLogIn.swift in Sources */,
+				644E483A2805BA180040D8F1 /* LogInPresenter.swift in Sources */,
 				6483152627DB4BD300452D8D /* AppCoordinator.swift in Sources */,
+				6458F62D280689E50055AA89 /* ArchitectureViewController.swift in Sources */,
 				643CEBEC27D87B74009C975B /* UIViewControllerExtension.swift in Sources */,
 				643078F827F322CC00691988 /* NewsWithRssViewController.swift in Sources */,
 				6483152F27DB539700452D8D /* FourthCoordinator.swift in Sources */,
@@ -508,8 +666,10 @@
 				647DC4D327CE7936006439F9 /* UICompSignUpViewController.swift in Sources */,
 				64AD806C27983999004663F6 /* ViewController.swift in Sources */,
 				64AD806827983999004663F6 /* AppDelegate.swift in Sources */,
+				644E48382805B8380040D8F1 /* MVCViewController.swift in Sources */,
 				6483152227DB4A8300452D8D /* Coordinator.swift in Sources */,
 				6483151F27DB48D500452D8D /* FourthViewController.swift in Sources */,
+				6458F63A2806D3D50055AA89 /* NamesViewController.swift in Sources */,
 				6483151D27DB488300452D8D /* ThirdViewController.swift in Sources */,
 				646C740927CCC40500EAF351 /* SignUpViewController.swift in Sources */,
 				6451AC6527F4288A000C537B /* Storyboard.swift in Sources */,
@@ -525,14 +685,18 @@
 				643CEBEE27D89924009C975B /* UITextViewExtension.swift in Sources */,
 				649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */,
 				6483151927DB47B400452D8D /* FirstViewController.swift in Sources */,
+				6458F63C2806D4320055AA89 /* NamesViewModel.swift in Sources */,
 				646C740B27CCC84800EAF351 /* LogInViewController.swift in Sources */,
 				64D07DBD27EDB23300E0498F /* UserData.swift in Sources */,
+				644E483C2805BA360040D8F1 /* MVPLogInViewController.swift in Sources */,
 				64AD806A27983999004663F6 /* SceneDelegate.swift in Sources */,
+				6458F6382806D2FB0055AA89 /* Names.swift in Sources */,
 				6483151B27DB482400452D8D /* SecondViewController.swift in Sources */,
 				64CF5DEA27ED85D200CB891D /* WebServicesCoordinator.swift in Sources */,
 				647DC4D527CE7955006439F9 /* UICompLogInViewController.swift in Sources */,
 				64A5E37927F17E9D00FAB6F8 /* SingleUser.swift in Sources */,
 				64C3B2BC27D135DD00D2C7E9 /* ScrollablesSegmentViewController.swift in Sources */,
+				64F467712807E0050028C78D /* MVVMLogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
