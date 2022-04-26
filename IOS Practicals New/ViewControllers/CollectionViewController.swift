@@ -7,6 +7,7 @@ class CollectionViewController: UIViewController {
     private var filteredNames = Array<String>()
     private var oldValueStepper: Double = 0
     private let reuseIdentifier = "Cell"
+    private let itemsToBeAdded = ["Agra", "Ranchi", "UP", "BIhar", "Vadodara", "Bhopal", "Rajkot", "Bhavnagr", "Amreli"]
     
     // MARK: - Outlets
     @IBOutlet weak var searchBar: UISearchBar!
@@ -24,9 +25,11 @@ class CollectionViewController: UIViewController {
         print(sender.value)
         if (sender.value > oldValueStepper) {
             oldValueStepper += Double(Constants.ONE)
-            names.append("Dummy")
-            filteredNames.append("Dummy")
-            collectionView.reloadData()
+            if let item = itemsToBeAdded.randomElement() {
+                names.append(item)
+                filteredNames.append(item)
+                collectionView.reloadData()
+            }
         } else {
             oldValueStepper -= Double(Constants.ONE)
             names.removeLast()
@@ -46,15 +49,6 @@ extension CollectionViewController {
         stepper.value = Double(filteredNames.count)
         oldValueStepper = Double(filteredNames.count)
         hideKeyboardWhenTapAround()
-    }
-    
-} // End of Extension
-
-// MARK: - UICollectionViewDelegate
-extension CollectionViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Item Selected at \(indexPath.row)")
     }
     
 } // End of Extension
@@ -97,7 +91,7 @@ extension CollectionViewController: UISearchBarDelegate {
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionWidth = collectionView.bounds.width
+        let collectionWidth = collectionView.bounds.width - 10
         return CGSize(width: collectionWidth/2 - 2, height: collectionWidth/4.3 - 2)
     }
     
@@ -107,6 +101,10 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return CGFloat(Constants.COLLECTIONVIEW_MINIMUM_LINE_SPACING_FOR_SECTION_AT)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 5,left: 5,bottom: 0,right: 5)
     }
     
 } // End of Extension

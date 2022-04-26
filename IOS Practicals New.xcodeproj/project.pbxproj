@@ -32,6 +32,7 @@
 		6483152B27DB533400452D8D /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152A27DB533400452D8D /* SecondCoordinator.swift */; };
 		6483152D27DB535C00452D8D /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152C27DB535C00452D8D /* ThirdCoordinator.swift */; };
 		6483152F27DB539700452D8D /* FourthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483152E27DB539700452D8D /* FourthCoordinator.swift */; };
+		648E4F972818005B00C2F258 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E4F962818005B00C2F258 /* CommonFunctions.swift */; };
 		6491E87E27D0B1D0008F84B3 /* MapUICompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491E87D27D0B1D0008F84B3 /* MapUICompViewController.swift */; };
 		649504B827CF536800A6BF9C /* TableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649504B727CF536800A6BF9C /* TableContentViewController.swift */; };
 		649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649504B927CF660100A6BF9C /* IndexTableViewCell.swift */; };
@@ -87,6 +88,7 @@
 		6483152A27DB533400452D8D /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		6483152C27DB535C00452D8D /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		6483152E27DB539700452D8D /* FourthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCoordinator.swift; sourceTree = "<group>"; };
+		648E4F962818005B00C2F258 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		6491E87D27D0B1D0008F84B3 /* MapUICompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUICompViewController.swift; sourceTree = "<group>"; };
 		649504B727CF536800A6BF9C /* TableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContentViewController.swift; sourceTree = "<group>"; };
 		649504B927CF660100A6BF9C /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				64A5E37B27F1AB2A00FAB6F8 /* NetworkingClient.swift */,
+				648E4F962818005B00C2F258 /* CommonFunctions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				649504B827CF536800A6BF9C /* TableContentViewController.swift in Sources */,
 				643CEBEE27D89924009C975B /* UITextViewExtension.swift in Sources */,
 				649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */,
+				648E4F972818005B00C2F258 /* CommonFunctions.swift in Sources */,
 				6483151927DB47B400452D8D /* FirstViewController.swift in Sources */,
 				646C740B27CCC84800EAF351 /* LogInViewController.swift in Sources */,
 				64D07DBD27EDB23300E0498F /* UserData.swift in Sources */,

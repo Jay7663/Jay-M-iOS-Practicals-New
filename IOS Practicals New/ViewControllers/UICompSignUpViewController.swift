@@ -28,17 +28,25 @@ class UICompSignUpViewController: UIViewController {
     }
     
     @IBAction func btnSignUpClick(_ sender: UIButton) {
-        UIView.animate(withDuration: 5.0) {
-            self.progressView.setProgress(1.0, animated: true)
-        }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5.0) {
-            self.performSegue(withIdentifier: "SignUpToTabBar", sender: self)
+        if let response = validateFields() {
+            CommonFunctions.generateAlert("Error", response, self)
+        } else {
+            UIView.animate(withDuration: 5.0) {
+                self.progressView.setProgress(1.0, animated: true)
+            }
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5.0) {
+                self.performSegue(withIdentifier: "SignUpToTabBar", sender: self)
+            }
         }
     }
     
     @IBAction func radioBtnGender(_ sender: UIButton) {
         btnMale.isSelected = sender.tag == Constants.ONE ? true : false
         btnFemale.isSelected = sender.tag == Constants.TWO ? true : false
+    }
+    
+    @IBAction func btnToHome(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 } // End of class
@@ -80,6 +88,9 @@ extension UICompSignUpViewController: UITextFieldDelegate {
 extension UICompSignUpViewController {
     
     fileprivate func initialData() {
+        
+        btnMale.isSelected = true
+        
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         tvBio.layer.borderWidth = 0.5
         tvBio.layer.borderColor = borderColor.cgColor
@@ -96,6 +107,24 @@ extension UICompSignUpViewController {
         
         createDatePicker()
         hideKeyboardWhenTapAround()
+    }
+    
+    fileprivate func validateFields() -> String? {
+        if let email = tfEmail.text, let password = tfPassword.text, let dateOfBirth = tfDatePicker.text {
+            if(email.isEmpty || password.isEmpty || tvBio.text.isEmpty) {
+                return "All fields are required"
+            } else if (!email.contains(".") || !email.contains("@")) {
+                return "Wrong email"
+            } else if (password.count < 8) {
+                return "Atleast need 8 Characters"
+            } else if (Int(lblAge.text ?? "0") == 0) {
+                return "Age is required"
+            } else if (dateOfBirth.isEmpty) {
+                return "Date of Birth is Required"
+            }
+            return nil
+        }
+        return "Something Went Wrong, Please try again"
     }
     
     @objc fileprivate func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
@@ -120,6 +149,7 @@ extension UICompSignUpViewController {
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneBtnClick))
         toolBar.setItems([doneBtn], animated: true)
         tfDatePicker.inputAccessoryView = toolBar
+        datePicker.maximumDate = Date()
         tfDatePicker.inputView = datePicker
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .wheels

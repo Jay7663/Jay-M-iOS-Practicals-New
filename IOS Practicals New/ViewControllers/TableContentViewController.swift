@@ -48,7 +48,6 @@ extension TableContentViewController {
     
     @objc fileprivate func refresh(_ sender: AnyObject) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            print("3 second delay")
             self.refreshControl.endRefreshing()
         }
     }
@@ -57,11 +56,7 @@ extension TableContentViewController {
 
 // MARK: - UITableViewDelegate
 extension TableContentViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-    }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(Constants.TABLEVIEW_HIGHT_FOR_ROW_AT)
     }
@@ -84,6 +79,9 @@ extension TableContentViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.lblCellItem.text = indexPath.section == 0 ? topCities[indexPath.row] : topStates[indexPath.row]
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = bgColorView
         return cell
     }
     
