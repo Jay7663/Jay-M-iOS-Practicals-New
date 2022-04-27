@@ -15,6 +15,7 @@ class SingleUserViewController: UIViewController, Storyboarded {
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         loadUser()
     }
     
@@ -24,12 +25,11 @@ class SingleUserViewController: UIViewController, Storyboarded {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let dataResponse = data,
                   error == nil else {
-                      print(error?.localizedDescription ?? "Response Error")
+                      self.generateAlert("Error", "\(String(describing: error?.localizedDescription))", self)
                       return }
             do{
                 let decoder = JSONDecoder()
                 let userResponse = try decoder.decode(SingleUserData.self, from: dataResponse)
-                print(userResponse)
                 
                 DispatchQueue.main.async {
                     if let url = URL(string: userResponse.data.avatar) {
@@ -45,10 +45,16 @@ class SingleUserViewController: UIViewController, Storyboarded {
                 }
                 
             } catch let parsingError {
-                print("Error", parsingError)
+                self.generateAlert("Error", "\(parsingError.localizedDescription)", self)
             }
         }
         task.resume()
+    }
+    
+    fileprivate func generateAlert(_ title: String, _ message: String, _ context: UIViewController) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        context.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Actions

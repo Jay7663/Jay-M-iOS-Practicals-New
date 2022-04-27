@@ -20,6 +20,7 @@ class NewsWithRssViewController: UIViewController, Storyboarded {
     
     // MARK: - File Private Functions
     fileprivate func initialData() {
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         tblNewsTitle.dataSource = self
         tblNewsTitle.register(UINib(nibName: "IndexTableViewCell", bundle: nil), forCellReuseIdentifier: "IndexTableViewCell")
     }
