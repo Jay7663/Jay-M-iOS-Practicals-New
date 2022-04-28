@@ -36,7 +36,8 @@ class UsersTableViewController: UIViewController, Storyboarded {
         guard let url = URL(string: "https://reqres.in/api/users?delay=3") else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let dataResponse = data, error == nil else {
-                print(error?.localizedDescription ?? "Response Error")
+                self.generateAlert("Error", "\(String(describing: error?.localizedDescription))", self)
+                self.generateAlert("Error", "\(String(describing: error?.localizedDescription))", self)
                 return
             }
             do{
@@ -44,7 +45,6 @@ class UsersTableViewController: UIViewController, Storyboarded {
                 let userResponse = try decoder.decode(RootUserData.self, from: dataResponse)
                 
                 for user in userResponse.data {
-                    print(user)
                     self.arrayUsers.append(UserData(id: user.id, email: user.email, first_name: user.first_name, last_name: user.last_name, avatar: user.avatar))
                 }
                 
@@ -57,7 +57,7 @@ class UsersTableViewController: UIViewController, Storyboarded {
             } catch let parsingError {
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
-                print("Error", parsingError)
+                self.generateAlert("Error", "\(parsingError.localizedDescription)", self)
             }
         }
         task.resume()
@@ -73,7 +73,6 @@ class UsersTableViewController: UIViewController, Storyboarded {
                     let userResponse = try decoder.decode(RootUserData.self, from: result)
                     
                     for user in userResponse.data {
-                        print(user)
                         self.arrayUsers.append(UserData(id: user.id, email: user.email, first_name: user.first_name, last_name: user.last_name, avatar: user.avatar))
                     }
                     
@@ -86,7 +85,7 @@ class UsersTableViewController: UIViewController, Storyboarded {
                 } catch let error {
                     self.activityIndicator.stopAnimating()
                     self.activityIndicator.isHidden = true
-                    print("Error: \(error.localizedDescription)")
+                    self.generateAlert("Error", "\(error.localizedDescription)", self)
                 }
             }
         }
@@ -105,6 +104,12 @@ class UsersTableViewController: UIViewController, Storyboarded {
         }
     }
     
+    fileprivate func generateAlert(_ title: String, _ message: String, _ context: UIViewController) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        context.present(alert, animated: true, completion: nil)
+    }
+    
     //MARK: - Actions
     @IBAction func btnAddUser(_ sender: UIButton) {
         let alert = UIAlertController(title: "Add User", message: "Enter below details:", preferredStyle: .alert)
@@ -115,11 +120,16 @@ class UsersTableViewController: UIViewController, Storyboarded {
         alert.addTextField { (textField) in
             textField.placeholder = "Enter Job..."
         }
-
         alert.addAction(UIAlertAction(title: "Add User", style: .default, handler: { [weak alert] (_) in
-            let tfName = alert?.textFields![0] // Force unwrapping because we know it exists.
+            let tfName = alert?.textFields![0]
             let tfJob = alert?.textFields![1]
-            self.handleCreationResponse(tfName?.text ?? "", tfJob?.text ?? "")
+            if let name = tfName?.text, let job = tfJob?.text {
+                if (name.isEmpty || job.isEmpty) {
+                    self.generateAlert("Error", "Empty Fiels", self)
+                } else {
+                    self.handleCreationResponse(tfName?.text ?? "", tfJob?.text ?? "")
+                }
+            }
         }))
         self.present(alert, animated: true, completion: nil)
     }
@@ -130,7 +140,6 @@ class UsersTableViewController: UIViewController, Storyboarded {
 extension UsersTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
         coordinator?.goToSingleUserScreen(indexPath.row + 1)
         tableView.deselectRow(at: indexPath, animated: true)
     }

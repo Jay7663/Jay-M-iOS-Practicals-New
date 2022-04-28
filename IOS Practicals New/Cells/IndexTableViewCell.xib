@@ -16,19 +16,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3f-nO-gzm">
-                        <rect key="frame" x="155" y="11.5" width="10.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3f-nO-gzm">
+                        <rect key="frame" x="20" y="12" width="280" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="H3f-nO-gzm" secondAttribute="bottom" constant="11.5" id="SAt-Iq-qas"/>
+                    <constraint firstItem="H3f-nO-gzm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="VUW-6R-1Eu"/>
+                    <constraint firstAttribute="trailing" secondItem="H3f-nO-gzm" secondAttribute="trailing" constant="20" id="VUz-i5-S9q"/>
+                    <constraint firstItem="H3f-nO-gzm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oiE-3A-UgI"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <constraints>
-                <constraint firstItem="H3f-nO-gzm" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="W1T-nF-5he"/>
-                <constraint firstItem="H3f-nO-gzm" firstAttribute="centerX" secondItem="njF-e1-oar" secondAttribute="centerX" id="q1b-hp-v1E"/>
-            </constraints>
             <connections>
                 <outlet property="lblCellItem" destination="H3f-nO-gzm" id="Wbw-AP-Kl8"/>
             </connections>
