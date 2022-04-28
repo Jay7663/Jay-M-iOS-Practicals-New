@@ -28,4 +28,8 @@ class ScrollablesSegmentViewController: UIViewController {
         }
     }
     
+    @IBAction func btnBackToHome(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 } // End of Class
