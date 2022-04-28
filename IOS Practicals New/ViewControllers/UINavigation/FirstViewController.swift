@@ -18,6 +18,7 @@ class FirstViewController: UIViewController {
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTapAround()
     }
     
     // MARK: - Actions
@@ -27,6 +28,10 @@ class FirstViewController: UIViewController {
         }
         coordinator?.goToSecond(tfMessage.text ?? "Empty", self)
     }
+    
+    @IBAction func btnToHome(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 } // End of Class
 
@@ -35,6 +40,21 @@ extension FirstViewController: FirstVCDataTransferDelegate {
     
     func messageSent(_ message: String) {
         lblMessage.text = message
+    }
+    
+} // End of Extension
+
+//MARK: - UITextFieldDelegate
+extension FirstViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case self.tfMessage:
+            self.tfMessage.resignFirstResponder()
+        default:
+            self.tfMessage.resignFirstResponder()
+        }
+        return true
     }
     
 } // End of Extension
