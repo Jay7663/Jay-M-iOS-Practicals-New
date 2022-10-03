@@ -71,15 +71,27 @@
                                     <segue destination="ACm-Ac-GY7" kind="presentation" modalPresentationStyle="fullScreen" id="wFv-YN-GPF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opU-ON-owc">
+                                <rect key="frame" x="30" y="389" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Custom Control">
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="CJz-GO-rlf" kind="presentation" modalPresentationStyle="fullScreen" id="SCS-dO-KeZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N63-Oh-oju" secondAttribute="trailing" constant="30" id="3Qx-bk-hOQ"/>
                             <constraint firstItem="tZc-Gc-0oH" firstAttribute="trailing" secondItem="u8q-a7-dCg" secondAttribute="trailing" id="3Uw-nv-xCb"/>
+                            <constraint firstItem="opU-ON-owc" firstAttribute="top" secondItem="tZc-Gc-0oH" secondAttribute="bottom" constant="30" id="Cph-bj-fQC"/>
                             <constraint firstItem="6UR-Oz-Nsg" firstAttribute="trailing" secondItem="N63-Oh-oju" secondAttribute="trailing" id="Ish-OZ-uiZ"/>
                             <constraint firstItem="N63-Oh-oju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KIm-X3-nT8"/>
                             <constraint firstItem="u8q-a7-dCg" firstAttribute="leading" secondItem="K9K-T1-kbh" secondAttribute="leading" id="OI2-6L-SPM"/>
+                            <constraint firstItem="opU-ON-owc" firstAttribute="trailing" secondItem="tZc-Gc-0oH" secondAttribute="trailing" id="TOT-gp-IiS"/>
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="trailing" secondItem="6UR-Oz-Nsg" secondAttribute="trailing" id="UZF-2A-Ome"/>
                             <constraint firstItem="tZc-Gc-0oH" firstAttribute="leading" secondItem="u8q-a7-dCg" secondAttribute="leading" id="V31-9R-m0y"/>
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="top" secondItem="6UR-Oz-Nsg" secondAttribute="bottom" constant="30" id="WDg-eM-ZVf"/>
@@ -89,6 +101,7 @@
                             <constraint firstItem="K9K-T1-kbh" firstAttribute="leading" secondItem="6UR-Oz-Nsg" secondAttribute="leading" id="gRd-LT-KXK"/>
                             <constraint firstItem="tZc-Gc-0oH" firstAttribute="top" secondItem="u8q-a7-dCg" secondAttribute="bottom" constant="30" id="uru-38-ts2"/>
                             <constraint firstItem="N63-Oh-oju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vRj-CS-rJE"/>
+                            <constraint firstItem="opU-ON-owc" firstAttribute="leading" secondItem="tZc-Gc-0oH" secondAttribute="leading" id="xqH-Nf-qA4"/>
                             <constraint firstItem="6UR-Oz-Nsg" firstAttribute="leading" secondItem="N63-Oh-oju" secondAttribute="leading" id="yEx-h0-n9j"/>
                         </constraints>
                     </view>
@@ -138,6 +151,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVJ-Is-Ly8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758" y="292"/>
+        </scene>
+        <!--CustomControl-->
+        <scene sceneID="iD7-MP-ZXc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomControl" id="CJz-GO-rlf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NsM-Lz-RWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="370"/>
         </scene>
     </scenes>
     <resources>

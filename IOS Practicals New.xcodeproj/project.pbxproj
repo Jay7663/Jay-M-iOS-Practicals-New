@@ -19,6 +19,9 @@
 		644E483C2805BA360040D8F1 /* MVPLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E483B2805BA360040D8F1 /* MVPLogInViewController.swift */; };
 		644E483E2805BAE00040D8F1 /* MVPLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644E483D2805BAE00040D8F1 /* MVPLogIn.storyboard */; };
 		6451AC6527F4288A000C537B /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6451AC6427F4288A000C537B /* Storyboard.swift */; };
+		6458C58C281698A900E7FA83 /* CustomControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458C58B281698A900E7FA83 /* CustomControl.storyboard */; };
+		6458C58E28169B9F00E7FA83 /* CustomControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458C58D28169B9F00E7FA83 /* CustomControlViewController.swift */; };
+		6458C59128169EDC00E7FA83 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458C59028169EDC00E7FA83 /* CustomTextField.swift */; };
 		6458F62A280689290055AA89 /* Architecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458F629280689290055AA89 /* Architecture.storyboard */; };
 		6458F62D280689E50055AA89 /* ArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F62C280689E50055AA89 /* ArchitectureViewController.swift */; };
 		6458F63028068B6A0055AA89 /* ArchitectureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458F62F28068B6A0055AA89 /* ArchitectureCoordinator.swift */; };
@@ -87,6 +90,9 @@
 		644E483B2805BA360040D8F1 /* MVPLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPLogInViewController.swift; sourceTree = "<group>"; };
 		644E483D2805BAE00040D8F1 /* MVPLogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPLogIn.storyboard; sourceTree = "<group>"; };
 		6451AC6427F4288A000C537B /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		6458C58B281698A900E7FA83 /* CustomControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomControl.storyboard; sourceTree = "<group>"; };
+		6458C58D28169B9F00E7FA83 /* CustomControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlViewController.swift; sourceTree = "<group>"; };
+		6458C59028169EDC00E7FA83 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		6458F629280689290055AA89 /* Architecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Architecture.storyboard; sourceTree = "<group>"; };
 		6458F62C280689E50055AA89 /* ArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureViewController.swift; sourceTree = "<group>"; };
 		6458F62F28068B6A0055AA89 /* ArchitectureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureCoordinator.swift; sourceTree = "<group>"; };
@@ -262,6 +268,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		6458C58F28169BB700E7FA83 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				6458C58D28169B9F00E7FA83 /* CustomControlViewController.swift */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
 		6458F62B2806895A0055AA89 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				64A5E37B27F1AB2A00FAB6F8 /* NetworkingClient.swift */,
+				6458C59028169EDC00E7FA83 /* CustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -437,6 +452,7 @@
 		64BD205027C8D9C600DD28E1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6458C58F28169BB700E7FA83 /* CustomControl */,
 				6458F62B2806895A0055AA89 /* Architecture */,
 				64CF5DE427ED7FD000CB891D /* WebServices */,
 				6483151727DB472400452D8D /* UINavigation */,
@@ -463,6 +479,7 @@
 				6483151527DB46F500452D8D /* UINavigation.storyboard */,
 				64CF5DDF27ED75BD00CB891D /* WebServices.storyboard */,
 				6458F629280689290055AA89 /* Architecture.storyboard */,
+				6458C58B281698A900E7FA83 /* CustomControl.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -581,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BD205327C8DA5E00DD28E1 /* Authentication.storyboard in Resources */,
+				6458C58C281698A900E7FA83 /* CustomControl.storyboard in Resources */,
 				64CF5DE027ED75BD00CB891D /* WebServices.storyboard in Resources */,
 				647DC4CF27CE7749006439F9 /* UIComponents.storyboard in Resources */,
 				649504BC27CF660100A6BF9C /* IndexTableViewCell.xib in Resources */,
@@ -671,6 +689,7 @@
 				6483151F27DB48D500452D8D /* FourthViewController.swift in Sources */,
 				6458F63A2806D3D50055AA89 /* NamesViewController.swift in Sources */,
 				6483151D27DB488300452D8D /* ThirdViewController.swift in Sources */,
+				6458C58E28169B9F00E7FA83 /* CustomControlViewController.swift in Sources */,
 				646C740927CCC40500EAF351 /* SignUpViewController.swift in Sources */,
 				6451AC6527F4288A000C537B /* Storyboard.swift in Sources */,
 				64CF5DE827ED858100CB891D /* SingleUserViewController.swift in Sources */,
@@ -681,6 +700,7 @@
 				6491E87E27D0B1D0008F84B3 /* MapUICompViewController.swift in Sources */,
 				6483152B27DB533400452D8D /* SecondCoordinator.swift in Sources */,
 				64C3C23627DEF832000A8CF3 /* FifthViewController.swift in Sources */,
+				6458C59128169EDC00E7FA83 /* CustomTextField.swift in Sources */,
 				649504B827CF536800A6BF9C /* TableContentViewController.swift in Sources */,
 				643CEBEE27D89924009C975B /* UITextViewExtension.swift in Sources */,
 				649504BB27CF660100A6BF9C /* IndexTableViewCell.swift in Sources */,

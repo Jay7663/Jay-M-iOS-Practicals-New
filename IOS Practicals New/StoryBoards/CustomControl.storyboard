@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Control View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomControlViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CustomControlViewController" customModule="IOS_Practicals_New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVc-Pc-Mml" customClass="CustomTextField" customModule="IOS_Practicals_New" customModuleProvider="target">
+                                <rect key="frame" x="30" y="84" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AbE-qQ-YSK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Name"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="person.fill" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJb-Ge-IbY" customClass="CustomTextField" customModule="IOS_Practicals_New" customModuleProvider="target">
+                                <rect key="frame" x="30" y="164" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9Cr-OA-run"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="User Name"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="person" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21I-hE-t2b" customClass="CustomTextField" customModule="IOS_Practicals_New" customModuleProvider="target">
+                                <rect key="frame" x="30" y="252" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aPf-0t-c5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Email"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="mail" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-IJ-kg5" customClass="CustomTextField" customModule="IOS_Practicals_New" customModuleProvider="target">
+                                <rect key="frame" x="30" y="332" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ThQ-Gq-XsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Phone Number"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="phone.fill" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7I2-be-3eR" customClass="CustomTextField" customModule="IOS_Practicals_New" customModuleProvider="target">
+                                <rect key="frame" x="30" y="412" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FbK-BT-a4G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textHint" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="startImage" value="lock" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXq-Wf-cZM">
+                                <rect key="frame" x="20" y="650" width="42" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Labelfrhfrh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-Mq-gJN">
+                                <rect key="frame" x="67" y="650" width="327" height="21"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3e5-IJ-kg5" firstAttribute="trailing" secondItem="21I-hE-t2b" secondAttribute="trailing" id="15Y-c6-bFO"/>
+                            <constraint firstItem="wVc-Pc-Mml" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="9Bf-uv-Ka7"/>
+                            <constraint firstItem="3e5-IJ-kg5" firstAttribute="top" secondItem="21I-hE-t2b" secondAttribute="bottom" constant="20" id="9Pz-Fy-8lP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wVc-Pc-Mml" secondAttribute="trailing" constant="30" id="BV9-Og-WVO"/>
+                            <constraint firstItem="wVc-Pc-Mml" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Bge-XC-bjH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bgp-Mq-gJN" secondAttribute="trailing" constant="20" id="LeP-Lq-TxA"/>
+                            <constraint firstItem="Bgp-Mq-gJN" firstAttribute="leading" secondItem="hXq-Wf-cZM" secondAttribute="trailing" constant="5" id="RQe-Of-Lro"/>
+                            <constraint firstItem="FJb-Ge-IbY" firstAttribute="trailing" secondItem="wVc-Pc-Mml" secondAttribute="trailing" id="V7m-RW-Bnn"/>
+                            <constraint firstItem="21I-hE-t2b" firstAttribute="top" secondItem="FJb-Ge-IbY" secondAttribute="bottom" constant="28" id="ZLe-8k-KyR"/>
+                            <constraint firstItem="FJb-Ge-IbY" firstAttribute="top" secondItem="wVc-Pc-Mml" secondAttribute="bottom" constant="20" id="ext-vg-A21"/>
+                            <constraint firstItem="7I2-be-3eR" firstAttribute="trailing" secondItem="3e5-IJ-kg5" secondAttribute="trailing" id="fBa-gf-gi7"/>
+                            <constraint firstItem="21I-hE-t2b" firstAttribute="leading" secondItem="FJb-Ge-IbY" secondAttribute="leading" id="kUH-Ps-TUR"/>
+                            <constraint firstItem="3e5-IJ-kg5" firstAttribute="leading" secondItem="21I-hE-t2b" secondAttribute="leading" id="kXQ-DR-ASD"/>
+                            <constraint firstItem="hXq-Wf-cZM" firstAttribute="top" secondItem="7I2-be-3eR" secondAttribute="bottom" constant="178" id="kkO-5S-GTn"/>
+                            <constraint firstItem="7I2-be-3eR" firstAttribute="leading" secondItem="3e5-IJ-kg5" secondAttribute="leading" id="mZH-o7-lVQ"/>
+                            <constraint firstItem="7I2-be-3eR" firstAttribute="top" secondItem="3e5-IJ-kg5" secondAttribute="bottom" constant="20" id="mdx-ic-AVK"/>
+                            <constraint firstItem="hXq-Wf-cZM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pdM-pl-FZx"/>
+                            <constraint firstItem="Bgp-Mq-gJN" firstAttribute="top" secondItem="7I2-be-3eR" secondAttribute="bottom" constant="178" id="wca-LZ-qY5"/>
+                            <constraint firstItem="21I-hE-t2b" firstAttribute="trailing" secondItem="FJb-Ge-IbY" secondAttribute="trailing" id="z4S-1K-Aw7"/>
+                            <constraint firstItem="FJb-Ge-IbY" firstAttribute="leading" secondItem="wVc-Pc-Mml" secondAttribute="leading" id="zq9-Lb-eSl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="31"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k8P-JB-bUT">
+            <objects>
+                <viewController id="4W7-Xr-qbA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rs-cg-4dQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEA-q3-DpG">
+                                <rect key="frame" x="173.5" y="64" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oLT-mT-X86"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DEA-q3-DpG" firstAttribute="centerX" secondItem="0Rs-cg-4dQ" secondAttribute="centerX" id="Jdk-aH-fuc"/>
+                            <constraint firstItem="DEA-q3-DpG" firstAttribute="top" secondItem="oLT-mT-X86" secondAttribute="top" constant="20" id="fqm-l9-UAw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pME-1A-bcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="32"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="21I-hE-t2b">
+            <size key="intrinsicContentSize" width="86.5" height="34"/>
+        </designable>
+        <designable name="3e5-IJ-kg5">
+            <size key="intrinsicContentSize" width="143.5" height="34"/>
+        </designable>
+        <designable name="7I2-be-3eR">
+            <size key="intrinsicContentSize" width="108.5" height="34"/>
+        </designable>
+        <designable name="FJb-Ge-IbY">
+            <size key="intrinsicContentSize" width="119" height="34"/>
+        </designable>
+        <designable name="wVc-Pc-Mml">
+            <size key="intrinsicContentSize" width="84" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
